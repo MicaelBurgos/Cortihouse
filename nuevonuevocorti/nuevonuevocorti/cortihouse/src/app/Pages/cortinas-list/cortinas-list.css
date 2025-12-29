@@ -330,7 +330,7 @@ color: #2d3436; /*👈 Color del texto del header */
 text-transform: uppercase;
 font-size: 0.75rem;
 letter-spacing: 0.5px;
-border-bottom: 2px solid #ff6b35; / 👈 Borde inferior del header */
+border-bottom: 2px solid #ff6b35; /* 👈 Borde inferior del header */
 }
 .table-custom th:first-child {
 border-top-left-radius: 8px;
@@ -811,4 +811,4 @@ padding: 0.5rem;
 .table-responsive {
 -webkit-overflow-scrolling: touch;
 }
-} 
+}
