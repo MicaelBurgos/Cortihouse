@@ -98,15 +98,15 @@ body {
    EDITAR: sombra, bordes, fondo de la card
 ═══════════════════════════════════════════ */
 .proforma-card {
-background: white;
-border-radius: 16px; /* 👈 Redondez de las esquinas */
-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); /* 👈 Sombra de la card */
-overflow: hidden;
-transition: all 0.3s ease;
+  background: white;
+  border-radius: 16px; /* 👈 Redondez de las esquinas */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); /* 👈 Sombra de la card */
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 .proforma-card:hover {
-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
 }
 /* ═══════════════════════════════════════════
    6. HEADER DE PROFORMA - Cabecera naranja
@@ -304,399 +304,404 @@ transform: translateY(-2px);
 10. BODY DE PROFORMA - Contenido
 ═══════════════════════════════════════════ */
 .proforma-body {
-padding: 1.5rem;
+  padding: 1.5rem;
 }
 /* ═══════════════════════════════════════════
 11. TABLA PERSONALIZADA
 EDITAR: colores de la tabla
 ═══════════════════════════════════════════ */
 .table-responsive {
-margin-bottom: 1.5rem;
--webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 .table-custom {
-width: 100%;
-border-collapse: separate;
-border-spacing: 0;
-font-size: 0.9rem;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
 }
 .table-custom thead tr {
-background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* 👈 Color del header de tabla */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* 👈 Color del header de tabla */
 }
 .table-custom th {
-padding: 1rem;
-font-weight: 700; /* 👈 Grosor del texto del header */
-color: #2d3436; /*👈 Color del texto del header */
-text-transform: uppercase;
-font-size: 0.75rem;
-letter-spacing: 0.5px;
-border-bottom: 2px solid #ff6b35; /* 👈 Borde inferior del header */
+  padding: 1rem;
+  font-weight: 700; /* 👈 Grosor del texto del header */
+  color: #2d3436; /*👈 Color del texto del header */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ff6b35; /* 👈 Borde inferior del header */
 }
 .table-custom th:first-child {
-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
 .table-custom th:last-child {
-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 /* Filas de items */
 .item-row {
-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 .item-row:hover {
-background-color: rgba(255, 107, 53, 0.03); /* 👈 Color al pasar mouse por fila */
+  background-color: rgba(255, 107, 53, 0.03); /* 👈 Color al pasar mouse por fila */
 }
 .table-custom td {
-padding: 1rem;
-vertical-align: middle;
-border-bottom: 1px solid #f1f3f5;
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f3f5;
 }
 /* ═══════════════════════════════════════════
 12. BADGES Y ETIQUETAS
 EDITAR: colores de badges
 ═══════════════════════════════════════════ */
 .codigo-badge {
-background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%); /* 👈 Color del badge de código */
-color: white;
-padding: 0.35rem 0.75rem;
-border-radius: 6px;
-font-size: 0.8rem;
-font-weight: 600;
-display: inline-block;
+  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%); /* 👈 Color del badge de código */
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
 }
 .color-badge {
-background: rgba(255, 107, 53, 0.1);
-color: #ff6b35; /* 👈 Color del badge de color */
-padding: 0.35rem 0.75rem;
-border-radius: 6px;
-font-size: 0.8rem;
-font-weight: 600;
-display: inline-block;
+  background: rgba(255, 107, 53, 0.1);
+  color: #ff6b35; /* 👈 Color del badge de color */
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
 }
 .cantidad-badge {
-background: linear-gradient(135deg, #f7931e 0%, #ff9f1c 100%); /* 👈 Color del badge de cantidad */
-color: white;
-padding: 0.35rem 0.65rem;
-border-radius: 20px;
-font-size: 0.8rem;
-font-weight: 700;
-display: inline-block;
-min-width: 35px;
-text-align: center;
+  background: linear-gradient(
+    135deg,
+    #f7931e 0%,
+    #ff9f1c 100%
+  ); /* 👈 Color del badge de cantidad */
+  color: white;
+  padding: 0.35rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+  min-width: 35px;
+  text-align: center;
 }
 .cantidad-badge.small {
-font-size: 0.75rem;
-padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
 }
 .item-nombre {
-color: #2d3436;
-font-size: 0.95rem;
+  color: #2d3436;
+  font-size: 0.95rem;
 }
 .medidas {
-color: #636e72;
-font-weight: 500;
+  color: #636e72;
+  font-weight: 500;
 }
 .item-total {
-color: #ff6b35; /* 👈 Color del total del item */
-font-size: 1.05rem;
+  color: #ff6b35; /* 👈 Color del total del item */
+  font-size: 1.05rem;
 }
 /* ═══════════════════════════════════════════
 13. FILAS DE ACCESORIOS
 ═══════════════════════════════════════════ */
 .accesorio-row {
-background-color: rgba(247, 147, 30, 0.03);
-font-size: 0.85rem;
+  background-color: rgba(247, 147, 30, 0.03);
+  font-size: 0.85rem;
 }
 .accesorio-row td {
-padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem;
 }
 .codigo-accesorio {
-background: rgba(108, 117, 125, 0.1);
-color: #6c757d;
-padding: 0.25rem 0.5rem;
-border-radius: 4px;
-font-size: 0.75rem;
-font-weight: 600;
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 .accesorio-nombre {
-color: #636e72;
-font-style: italic;
+  color: #636e72;
+  font-style: italic;
 }
 .accesorio-total {
-color: #f7931e;
-font-weight: 600;
+  color: #f7931e;
+  font-weight: 600;
 }
 /* ═══════════════════════════════════════════
 14. BOTONES DE TABLA (Editar, Eliminar)
 ═══════════════════════════════════════════ */
 .action-buttons {
-display: flex;
-gap: 0.5rem;
-justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 .btn-table-action {
-background: transparent;
-border: 1.5px solid #dee2e6;
-padding: 0.5rem;
-border-radius: 6px;
-cursor: pointer;
-transition: all 0.2s;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-min-width: 36px;
-min-height: 36px;
+  background: transparent;
+  border: 1.5px solid #dee2e6;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
 }
 .btn-edit {
-color: #f7931e;
-border-color: #f7931e;
+  color: #f7931e;
+  border-color: #f7931e;
 }
 .btn-edit:hover {
-background: #f7931e;
-color: white;
-transform: scale(1.1);
+  background: #f7931e;
+  color: white;
+  transform: scale(1.1);
 }
 .btn-delete {
-color: #dc3545;
-border-color: #dc3545;
+  color: #dc3545;
+  border-color: #dc3545;
 }
 .btn-delete:hover {
-background: #dc3545;
-color: white;
-transform: scale(1.1);
+  background: #dc3545;
+  color: white;
+  transform: scale(1.1);
 }
 /* ═══════════════════════════════════════════
 15. FOOTER DE PROFORMA
 ═══════════════════════════════════════════ */
 .proforma-footer {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 1.5rem;
-border-top: 2px solid #f1f3f5;
-margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f1f3f5;
+  margin-top: 1rem;
 }
 .btn-add-product {
-background: white;
-border: 2px dashed #ff6b35;
-color: #ff6b35;
-padding: 0.75rem 1.5rem;
-border-radius: 10px;
-font-weight: 600;
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
-cursor: pointer;
-transition: all 0.3s;
+  background: white;
+  border: 2px dashed #ff6b35;
+  color: #ff6b35;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .btn-add-product:hover {
-background: rgba(255, 107, 53, 0.05);
-border-style: solid;
-transform: translateY(-2px);
+  background: rgba(255, 107, 53, 0.05);
+  border-style: solid;
+  transform: translateY(-2px);
 }
 .total-final {
-text-align: right;
+  text-align: right;
 }
 .total-final-label {
-font-size: 0.75rem;
-color: #636e72;
-font-weight: 600;
-letter-spacing: 1px;
-text-transform: uppercase;
-margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  color: #636e72;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 .total-final-amount {
-font-size: 1.9rem; /* 👈 Tamaño del total final */
-font-weight: 800; /*👈 Grosor del total final */
-color: #ff6b35; /*👈 Color del total final */
-line-height: 1;
+  font-size: 1.9rem; /* 👈 Tamaño del total final */
+  font-weight: 800; /*👈 Grosor del total final */
+  color: #ff6b35; /*👈 Color del total final */
+  line-height: 1;
 }
 /* ═══════════════════════════════════════════
 16. SECCIÓN DE DESCRIPCIÓN
 ═══════════════════════════════════════════ */
 .descripcion-section {
-margin-top: 1.5rem;
-padding: 1.25rem;
-background: linear-gradient(135deg, rgba(247, 147, 30, 0.05) 0%, rgba(255, 159, 28, 0.02) 100%);
-border: 2px solid rgba(247, 147, 30, 0.2);
-border-radius: 12px;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(247, 147, 30, 0.05) 0%, rgba(255, 159, 28, 0.02) 100%);
+  border: 2px solid rgba(247, 147, 30, 0.2);
+  border-radius: 12px;
 }
 .descripcion-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .descripcion-title {
-display: flex;
-align-items: center;
-gap: 0.5rem;
-font-weight: 700;
-color: #2d3436;
-font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #2d3436;
+  font-size: 1rem;
 }
 .descripcion-title svg {
-color: #f7931e;
+  color: #f7931e;
 }
 .descripcion-actions {
-display: flex;
-gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 .btn-descripcion {
-padding: 0.5rem 1rem;
-border-radius: 8px;
-font-size: 0.875rem;
-font-weight: 600;
-border: none;
-cursor: pointer;
-transition: all 0.2s;
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .btn-save {
-background: #28a745;
-color: white;
+  background: #28a745;
+  color: white;
 }
 .btn-save:hover {
-background: #218838;
+  background: #218838;
 }
 .btn-cancel {
-background: #6c757d;
-color: white;
+  background: #6c757d;
+  color: white;
 }
 .btn-cancel:hover {
-background: #5a6268;
+  background: #5a6268;
 }
 .btn-edit {
-background: #f7931e;
-color: white;
+  background: #f7931e;
+  color: white;
 }
 .btn-edit:hover {
-background: #e07f0f;
+  background: #e07f0f;
 }
 .descripcion-textarea {
-width: 100%;
-padding: 0.75rem;
-border: 2px solid #f7931e;
-border-radius: 8px;
-font-size: 0.9rem;
-font-family: inherit;
-resize: vertical;
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #f7931e;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
 }
 .descripcion-textarea:focus {
-outline: none;
-border-color: #ff6b35;
-box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
 }
 .descripcion-text {
-color: #2d3436;
-line-height: 1.6;
-white-space: pre-wrap;
+  color: #2d3436;
+  line-height: 1.6;
+  white-space: pre-wrap;
 }
 /* ═══════════════════════════════════════════
 17. RESUMEN FINAL
 ═══════════════════════════════════════════ */
 .resumen-card {
-background: white;
-padding: 1.5rem;
-border-radius: 12px;
-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 .resumen-item {
-display: flex;
-align-items: center;
-gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .resumen-label {
-font-weight: 600;
-color: #636e72;
-font-size: 0.95rem;
+  font-weight: 600;
+  color: #636e72;
+  font-size: 0.95rem;
 }
 .resumen-value {
-font-weight: 700;
-color: #2d3436;
-font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3436;
+  font-size: 1.25rem;
 }
 .resumen-total {
-color: #ff6b35; /* 👈 Color del total en resumen */
-font-size: 1.48rem;
-font-weight: 800;
+  color: #ff6b35; /* 👈 Color del total en resumen */
+  font-size: 1.48rem;
+  font-weight: 800;
 }
 .resumen-divider {
-width: 2px;
-height: 40px;
-background: linear-gradient(to bottom, transparent, #dee2e6, transparent);
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #dee2e6, transparent);
 }
 /* ═══════════════════════════════════════════
 18. MODALES
 ═══════════════════════════════════════════ */
 .modal.d-block {
-background: rgba(0, 0, 0, 0.6);
-backdrop-filter: blur(4px);
-position: fixed;
-inset: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 1050;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
 }
 .modal-content {
-border: none;
-border-radius: 16px;
-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 .modal-header {
-background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-color: white;
-border-bottom: none;
-padding: 1.5rem;
-border-radius: 16px 16px 0 0;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  border-bottom: none;
+  padding: 1.5rem;
+  border-radius: 16px 16px 0 0;
 }
 .modal-title {
-font-weight: 700;
-font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 .btn-close {
-filter: brightness(0) invert(1);
-opacity: 0.8;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
 }
 .btn-close:hover {
-opacity: 1;
+  opacity: 1;
 }
 .modal-body {
-padding: 1.5rem;
+  padding: 1.5rem;
 }
 .modal-footer {
-border-top: 1px solid #f1f3f5;
-padding: 1rem 1.5rem;
+  border-top: 1px solid #f1f3f5;
+  padding: 1rem 1.5rem;
 }
 /* Botones del modal */
 .modal-footer .btn-secondary {
-background: #6c757d;
-border: none;
+  background: #6c757d;
+  border: none;
 }
 .modal-footer .btn-secondary:hover {
-background: #5a6268;
+  background: #5a6268;
 }
 .modal-footer .btn-success {
-background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-border: none;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  border: none;
 }
 .modal-footer .btn-success:hover {
-background: linear-gradient(135deg, #218838 0%, #1aa179 100%);
+  background: linear-gradient(135deg, #218838 0%, #1aa179 100%);
 }
 /* ═══════════════════════════════════════════
 19. RESPONSIVE
 ═══════════════════════════════════════════ */
+/* Tablets */
 @media (max-width: 991px) {
   .proforma-header {
     padding: 1.75rem 1.5rem;
     min-height: auto;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .total-amount {
@@ -704,111 +709,138 @@ background: linear-gradient(135deg, #218838 0%, #1aa179 100%);
   }
 }
 
+/* MÓVIL */
 @media (max-width: 767px) {
+  /* HEADER PROFORMA */
   .proforma-header {
     padding: 1.5rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
   .proforma-number {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
   }
 
   .total-amount {
     font-size: 1.75rem;
+    align-self: flex-start;
+  }
+
+  /* Botones PDF / eliminar */
+  .proforma-actions {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
   }
 
   .btn-action {
-    padding: 0.5rem 1rem;
+    flex: 1;
+    justify-content: center;
+    padding: 0.6rem 1rem;
     font-size: 0.85rem;
   }
+
+  /* RESTO DE LA PÁGINA */
+  .page-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start !important;
+  }
+
+  .btn-nueva-proforma,
+  .btn-add-product {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .table-custom {
+    font-size: 0.8rem;
+  }
+
+  .table-custom th,
+  .table-custom td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .proforma-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .total-final {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 107, 53, 0.05);
+    border-radius: 8px;
+  }
+
+  .resumen-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .resumen-divider {
+    width: 100%;
+    height: 2px;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .modal-lg {
+    max-width: calc(100% - 1rem);
+  }
 }
-@media (max-width: 767px) {
-.page-header {
-flex-direction: column;
-gap: 1rem;
-align-items: flex-start !important;
-}
-.btn-nueva-proforma {
-width: 100%;
-justify-content: center;
-}
-.table-custom {
-font-size: 0.8rem;
-}
-.table-custom th,
-.table-custom td {
-padding: 0.75rem 0.5rem;
-}
-.proforma-footer {
-flex-direction: column;
-gap: 1rem;
-align-items: stretch;
-}
-.btn-add-product {
-width: 100%;
-justify-content: center;
-}
-.total-final {
-text-align: center;
-padding: 1rem;
-background: rgba(255, 107, 53, 0.05);
-border-radius: 8px;
-}
-.resumen-card {
-flex-direction: column;
-gap: 1rem;
-}
-.resumen-divider {
-width: 100%;
-height: 2px;
-}
-.modal-dialog {
-margin: 0.5rem;
-}
-.modal-lg {
-max-width: calc(100% - 1rem);
-}
-}
+
+/* Móviles pequeños */
 @media (max-width: 576px) {
-.page-title {
-font-size: 1.5rem;
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .proforma-number {
+    font-size: 1.2rem;
+  }
+
+  .total-amount {
+    font-size: 1.6rem;
+  }
+
+  .cliente-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
-.proforma-number {
-font-size: 1.25rem;
-}
-.total-amount {
-font-size: 1.75rem;
-}
-.cliente-info {
-flex-direction: column;
-align-items: flex-start;
-gap: 0.5rem;
-}
-}
+
 /* ═══════════════════════════════════════════
 20. ANIMACIONES
 ═══════════════════════════════════════════ */
 @keyframes fadeInUp {
-from {
-opacity: 0;
-transform: translateY(20px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .proforma-card {
-animation: fadeInUp 0.4s ease-out;
+  animation: fadeInUp 0.4s ease-out;
 }
 /* Touch targets mínimos */
 .btn-sm {
-min-width: 44px;
-min-height: 44px;
-padding: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
 }
 /* Scroll suave en tablas */
 .table-responsive {
--webkit-overflow-scrolling: touch;
-}
+  -webkit-overflow-scrolling: touch;
 }
