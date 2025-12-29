@@ -99,8 +99,8 @@ body {
 ═══════════════════════════════════════════ */
 .proforma-card {
 background: white;
-border-radius: 16px; / 👈 Redondez de las esquinas /
-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); / 👈 Sombra de la card */
+border-radius: 16px; /* 👈 Redondez de las esquinas */
+box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); /* 👈 Sombra de la card */
 overflow: hidden;
 transition: all 0.3s ease;
 }
@@ -811,4 +811,4 @@ padding: 0.5rem;
 .table-responsive {
 -webkit-overflow-scrolling: touch;
 }
- }
+} 
