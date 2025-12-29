@@ -27,7 +27,12 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center gap-3">
         <li class="nav-item">
-          <button class="btn btn-nav-light" routerLink="/cortinas-list" routerLinkActive="active">
+          <button
+            class="btn btn-nav-light"
+            routerLink="/cortinas-list"
+            routerLinkActive="active"
+            (click)="closeNavbar()"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -56,6 +61,7 @@
             class="btn btn-nav-primary"
             routerLink="/cortinas-form"
             routerLinkActive="active"
+            (click)="closeNavbar()"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
