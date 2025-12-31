@@ -844,3 +844,55 @@ EDITAR: colores de badges
 .table-responsive {
   -webkit-overflow-scrolling: touch;
 }
+/* ═══════════════════════════════════════════
+FIX EDITAR ITEMS - MÓVIL
+═══════════════════════════════════════════ */
+@media (max-width: 767px) {
+  /* Cabecera editar */
+  .edit-header,
+  .edit-title,
+  .page-title {
+    width: 100%;
+    word-break: break-word;
+    line-height: 1.2;
+  }
+
+  /* Formularios en filas */
+  .form-row,
+  .form-group-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Inputs */
+  .form-control,
+  .form-select {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  /* Cantidad / precio */
+  .qty-group,
+  .input-group {
+    flex-wrap: wrap;
+  }
+
+  .input-group > * {
+    width: 100%;
+  }
+
+  /* Botones */
+  .edit-actions,
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .edit-actions .btn,
+  .form-actions .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 44px;
+  }
+}
